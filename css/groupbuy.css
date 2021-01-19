@@ -1,0 +1,934 @@
+    /*[ RESTYLE TAG ]
+///////////////////////////////////////////////////////////
+*/
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    ul,
+    li {
+        margin: 0px;
+        list-style-type: none;
+    }
+
+    iframe {
+        border: none !important;
+    }
+    /*html5*/
+
+    article,
+    aside,
+    dialog,
+    footer,
+    header,
+    section,
+    nav,
+    figure,
+    menu {
+        display: block
+    }
+    /* -----文字設定---------------------- */
+
+    body {
+        font-family: "Helvetica", "微軟正黑體", Verdana, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #1b1b1b;
+        background: #fff;
+        position: relative;
+    }
+
+    a {
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        color: #d40014;
+        margin: 0px;
+        text-decoration: none;
+    }
+
+    a:focus {
+        outline: none !important;
+        text-decoration: none;
+        color: #6d000a;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #6d000a;
+    }
+
+    em {
+        font-style: normal;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0px;
+    }
+
+    p {
+
+        font-size: 18px;
+        line-height: 1.7;
+        color: #666;
+        margin: 0px;
+    }
+    /* -----排版系統------------------------- */
+
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .g-md-12 {
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .col {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+
+
+
+    .linesouce {
+        border-top: 1px solid #eee;
+        margin: 15px 0;
+    }
+
+    .textcenter {
+        text-align: center;
+    }
+
+    .img-rwd {
+        width: 100%;
+        height: 100%
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            max-width: 640px;
+        }
+    }
+    /* -----按鈕設定------------------------- */
+
+    button {
+        outline: none !important;
+        border: none;
+        background: transparent;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    .btGreen {
+        height: 50px;
+        width: 100%;
+        background: #d40014;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+        display: block;
+    }
+
+    .btGreen:hover {
+        background: #6d000a;
+    }
+
+    .btOut {
+        height: 50px;
+        width: 100%;
+        border: 1px solid #d40014;
+        background: #fff;
+        border-radius: 5px;
+        color: #d40014;
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+        display: block;
+    }
+
+    .btOut:hover {
+        color: #fff;
+        background: #6d000a;
+    }
+
+    .btGlay {
+        height: 50px;
+        width: 100%;
+        background: #aaaaaa;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+        display: block;
+    }
+
+    .btGlay:hover {
+        background: #4d4d4d;
+    }
+
+    .plink {
+        margin-top: 20px;
+    }
+
+    .plink a {
+        font-size: 18px;
+        color: #d40014;
+        text-decoration: underline;
+    }
+
+    .plink a:hover {
+        color: #6d000a;
+    }
+
+    .righttag {
+        position: fixed;
+        right: 0;
+        top: 180px;
+        z-index: 99;
+    }
+
+    .btn_shop {
+        background-size: cover;
+        font-weight: bold;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        background-color: rgba(7, 176, 133, 0.75);
+        font-family: 微軟正黑體, 標楷體;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px 0px 0px 10px;
+        border-width: 1.2px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.74);
+        border-image: initial;
+        font-size: 16px;
+    }
+
+    .righttag2 {
+        position: fixed;
+        right: 0;
+        top: 270px;
+        z-index: 99;
+    }
+
+    .btn_shop {
+        background-size: cover;
+        font-weight: bold;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        display: block;
+        text-align: center;
+        background-color: rgba(7, 176, 133, 0.75);
+        font-family: 微軟正黑體, 標楷體;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 10px 0px 0px 10px;
+        border-width: 1.2px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.74);
+        border-image: initial;
+        font-size: 16px;
+    }
+
+    .btn_shop:active {
+        color: #fff;
+    }
+
+    .btn_shop:hover {
+        color: #fff;
+    }
+
+    .btn_shop:focus {
+        color: #fff;
+    }
+    /* -----表單設定---------------------- */
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0;
+    }
+
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+
+    input {
+        outline: none;
+        border: 1px #ddd solid;
+    }
+
+    select {
+        outline: none;
+        border: 1px #ddd solid !important;
+    }
+
+    textarea {
+        outline: none;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: none;
+        font-size: 16px;
+        background: #fff;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+
+    .form-check {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* Hide the browser's default checkbox */
+
+    .form-check input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    /* Create a custom checkbox */
+
+    .checkmark {
+        position: absolute;
+
+        left: 0;
+        height: 24px;
+        width: 24px;
+        background: url(../images/checkbox_no.png)no-repeat;
+        background-size: 24px;
+    }
+    /* On mouse-over, add a grey background color */
+
+    .form-check:hover input~.checkmark {}
+    /* When the checkbox is checked, add a blue background */
+
+    .form-check input:checked~.checkmark {}
+    /* Create the checkmark/indicator (hidden when not checked) */
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the checkmark when checked */
+
+    .form-check input:checked~.checkmark:after {
+        display: block;
+    }
+    /* Style the checkmark/indicator */
+
+    .form-check .checkmark:after {
+        left: 0px;
+        top: 0px;
+        width: 24px;
+        height: 24px;
+        background: url(../images/checkbox.png)no-repeat;
+        background-size: 24px;
+    }
+    /* Create a custom radio button */
+
+    .radiomark {
+        position: absolute;
+        top: 0;
+        left: 3px;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    /* On mouse-over, add a grey background color */
+
+    .radio label {
+        font-weight: 400;
+        padding-left: 40px;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    .form-check:hover input~.radiomark {
+        background-color: #ccc;
+    }
+    /* When the radio button is checked, add a blue background */
+
+    .form-check input:checked~.radiomark {
+        background-color: #35af98;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+
+    .radiomark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+
+    .form-check input:checked~.radiomark:after {
+        display: block;
+    }
+    /* Style the indicator (dot/circle) */
+
+    .form-check .radiomark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .radio span {
+        display: block;
+        padding: 3px 0;
+    }
+
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    input:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus:-moz-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus::-moz-placeholder {
+        color: transparent;
+    }
+
+    textarea:focus:-ms-input-placeholder {
+        color: transparent;
+    }
+
+    .form-field .icon-down {
+        background: url(../images/arr.png)no-repeat right 0.75em center;
+        background-color: #fff;
+        background-size: 20px;
+    }
+
+    .clear {
+        clear: both
+    }
+    /* --lightbox-------------------------- */
+
+    .lightbutton {
+        display: inline-block;
+        background: #999;
+        color: #f2f2f2;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        padding: 10px 1em;
+        -moz-box-shadow: 0 3px 0 #777;
+        -webkit-box-shadow: 0 3px 0 #777;
+        box-shadow: 0 3px 0 #777;
+        font-size: 1.3em;
+        text-decoration: none;
+    }
+
+    .lightbox-target {
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .lightbox-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -o-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    .lightbox-target .lightcontent {
+        width: 300px;
+        height: 460px;
+        background: #fff;
+        color: #333;
+        margin: auto;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-height: 0%;
+        max-width: 640px;
+        border: 3px solid #fff;
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        -moz-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.5s;
+    }
+
+    .lightbox-target .lightmessage {
+        padding: 10px;
+        border-radius: 20px;
+        width: 80vw;
+
+
+        background: #fff;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+        margin: auto;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+
+        border: 3px solid #fff;
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box;
+        -moz-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.5s;
+        display: block;
+    }
+
+    .lightbox-target .lightmessage p {
+
+        font-size: 20px;
+        color: #333;
+        padding: 10px;
+    }
+
+    .lightbox-target img {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        border: 3px solid #fff;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .lightbox-target:target {
+        opacity: 1;
+        top: 0;
+        bottom: 0;
+    }
+
+    .lightbox-target:target .lightcontent,
+    .lightbox-target:target img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .lightbox-target:target .lightbox-close {
+        top: -26px;
+    }
+
+    .lightbox-close {
+        border-radius: 40px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        background: #139dd7;
+        color: #fff;
+        position: absolute;
+        top: -26px;
+        right: -8%;
+        -moz-transition: ease-in-out 0.5s;
+        -o-transition: ease-in-out 0.5s;
+        -webkit-transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.5s;
+    }
+
+    .lightbox-close:before,
+    .lightbox-close:after {
+        content: " ";
+        display: block;
+        height: 30px;
+        width: 1px;
+        background: #fff;
+        position: absolute;
+        left: 26px;
+        top: 10px;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .lightbox-close:after {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    /* --開始-------------------------- */
+
+    .bigbg {
+        width: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8efdb+0,ffffff+50,d8efdb+100 */
+        background: #e80000;
+    }
+
+    .header {
+        height: 60px;
+        width: 100%;
+        background: #fff;
+    }
+
+    .logo {
+        float: left;
+        background: url(../images/logo.png)no-repeat;
+        width: 160px;
+        background-size: cover;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+
+
+    .kv {
+        width: 100%;
+
+
+        position: relative;
+        background-size: cover;
+    }
+
+    .kv img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .formbox {
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .entry {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        margin: 10px;
+    }
+
+    .entry .tit {
+        background: url(../images/tit1.jpg) 50% 0 no-repeat;
+        width: 100%;
+        height: 100px;
+        border: 1px solid #dbdbdb;
+        margin-bottom: 40px;
+    }
+
+    .entry h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: normal;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .entry .actionbt {
+        width: 60%;
+        margin: 30px auto 0;
+    }
+
+    .item {
+        background: #fff;
+        border-radius: 10px;
+        flex: 1;
+        margin: 10px;
+    }
+
+    .box50 {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .directions {
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .directions li {
+        list-style-type: decimal;
+        margin-left: 25px;
+    }
+
+    .directions p {
+        color: #fff;
+    }
+
+    .footer {
+        text-align: center;
+        border-top: 1px solid #fff;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .footer a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .footer p {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .pagetit {
+        width: 100%;
+        height: 60px;
+        color: #fff;
+        background: url(../images/tit2.jpg)no-repeat;
+        font-size: 24px;
+        padding: 10px 0 0 25px;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .phonecode {
+        background: #f09300;
+        width: 200px;
+        height: 45px;
+        border-radius: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 45px;
+        display: block;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    .phonecode:hover {
+        color: #fff;
+        background: #ba7200
+    }
+
+    .mtop-20 {
+        margin-top: -20px;
+    }
+
+    .mtop-30 {
+        margin-top: -30px;
+    }
+
+    .table {
+        display: flex;
+        width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+    .tableitem {
+        flex: 1;
+        margin: 7px 15px;
+    }
+
+    .tableitem2 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+        margin: 7px 15px;
+    }
+
+    .reservation {
+        background: #f5f5f5;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .reservation h4 {
+        margin-bottom: 15px;
+    }
+
+    .bt3 {
+        float: right;
+        width: 124px;
+        margin-right: 20px;
+        cursor: pointer;
+        padding-top: 3px;
+    }
+
+    .bt3 img {
+        width: 100%;
+    }
+
+    .innerkv {
+        width: 100%;
+    }
+
+    .place {
+        margin-left: 20px;
+        padding-left: 30px;
+        background: url(../images/icon.png)no-repeat;
+        background-size: 20px;
+    }
+
+    .plink {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    .twobt {
+        display: flex;
+    }
+
+    .twobt button {
+        flex: 1;
+        margin: 5px;
+    }
+.video-tit{ margin-top: 30px;text-align: center;}
+.video-tit p{text-align: center; color: #fff;font-size: 24px;display: inline-block;vertical-align:top;}
+.video-tit .vicon{background: url(../images/video_icon1.jpg)no-repeat; background-size:contain;width: 35px;display: inline-block; padding-bottom: 30px;margin-top: 5px;}
+    @media (max-width: 576px) {
+        .item {}
+        .entry .tit {
+            background: url(../images/tit1.jpg) 50% 0 no-repeat;
+            width: 100%;
+            height: 70px;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 40px;
+            background-size: cover;
+        }
+        .formbox {
+
+            width: 100%;
+        }
+        .video-tit p{font-size: 18px;}
+    }
+
+    .video-container {
+
+        position: relative;
+
+        padding-bottom: 56.25%;
+
+
+        height: 0;
+
+        overflow: hidden;
+        margin:0 20px 10px;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+    }
